@@ -1,6 +1,8 @@
 /*
     Day 3
     Find largest Area enclosed by a bar
+    input : arr[] : {1,4,3,7,1,3,6]
+    output : 9(largest rectangular area)
 */
 
 #include<iostream>
@@ -15,16 +17,16 @@ int maxArea(int *arr, int n)
         left_index = i;
         for(int j = i - 1; j >= 0; j--)
         {
-            if(arr[j] >= arr[i])
+            if(arr[j] >= arr[i])   //traverse in left, till you find bar whose height is greater than or equal to current bar
                 left_index = j;
-            else
+            else                 //break when you find smaller length bar
                 break;
         }
 
         right_index = i;
         for(int j = i + 1; i < n; j++)
         {
-            if(arr[j] >= arr[i])
+            if(arr[j] >= arr[i])        // traverse in right ,till you find bar whose height is greater than or equal to current bar
                 right_index = j;
             else
                 break;
