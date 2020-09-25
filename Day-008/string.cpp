@@ -1,3 +1,14 @@
+/*
+    input
+    4
+    string[] s1 ={ab, bc, def, ab}
+    2
+    string[] s2 ={ab,bc}
+    output : occurance of each string s2 in s1
+             2
+             1
+
+*/
 #include<iostream>
 #include<unordered_map>
 #include<vector>
