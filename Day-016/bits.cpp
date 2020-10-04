@@ -1,3 +1,9 @@
+/**
+    Given a number n, finad all binary sequence of length 2n such that sum of first n bits is same as sum of last n bits.
+    input : n = 2
+    output:  0101, 1111,1001,0110,0000,1010
+*/
+
 #include<iostream>
 #include<vector>
 using namespace std;
