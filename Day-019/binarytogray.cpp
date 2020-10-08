@@ -4,7 +4,7 @@
     gray =   1001
 */
 #include<iostream>
-#include<cstring>
+#include<string>
 using namespace std;
 
 string convertToGray(string s)
@@ -18,7 +18,7 @@ string convertToGray(string s)
         int b = s[i - 1] - '0';
         a = a ^ b;
         string temp = to_string(a);
-        res += temp;
+        res.push_back(temp);
     }
     return res;
 }
